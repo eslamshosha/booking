@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>booking</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/line-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="internal-page">
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <!-- preloader -->
+    <!-- header section -->
+    <header>
+      <div class="top-header">
+        <div class="nav-header">
+          <figure class="img-logo">
+            <a href="index.html"
+              ><img
+                src="images/DD-Assets/logo.svg"
+                class="img-fluid"
+                alt="logo"
+              />
+            </a>
+          </figure>
+          <div class="navgition">
+            <div class="nav-head">
+              <a href="index.html" class="lang-ancor"> English</a>
+              <button class="close-menu">
+                <i class="las la-times"></i>
+              </button>
+            </div>
+            <ul class="big-menu list-unstyled">
+              <li>
+                <a href="index.html"> الرئيسية</a>
+              </li>
+              <li>
+                <a href="category.html"> المناسبات</a>
+              </li>
+              <li>
+                <a href="cart.html"> حجوزاتى</a>
+              </li>
+              <li>
+                <a href="fav.html"> المفضلة</a>
+              </li>
+
+              <li>
+                <a href="contact.html"> تواصل معنا</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-cont">
+            <div class="show-icons">
+              <div class="header-icons">
+                <a href="cart.html" class="add-to">
+                  <i class="las la-shopping-cart"></i>
+                  <span class="counter">0</span>
+                </a>
+                <button class="menu-bars" id="menu-id">
+                  <i class="las la-bars"></i>
+                </button>
+                <a href="index-en.html" class="lang-ancor"> English</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section     -->
+    <!-- breadcrumb section -->
+    <section class="breadcrumb-sec">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="item-home">
+            <a class="bread-link bread-home aFixx" href="index.html"
+              >الرئيسية
+            </a>
+          </li>
+          <li class="item-home">
+            <a class="bread-link" href="category.html">المناسبات</a>
+          </li>
+          <li class="active item-23">
+            <span class="bread-current"> تفاصيل المناسبة</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- breadcrumb section -->
+    <!-- category-section -->
+    <section class="single-page position-relative">
+      <div class="container">
+        <div class="products-post-cont">
+          <div class="products-post-img-cont">
+            <div class="post-slider">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product">
+                      <a href="#!" class="product-item">
+                        <figure class="product-img loading-img">
+                          <img
+                            data-src="images/DD-Assets/prod1.jpg"
+                            class="img-fluid lazy-img"
+                          />
+                        </figure>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product">
+                      <a href="#!" class="product-item">
+                        <figure class="product-img loading-img">
+                          <img
+                            data-src="images/DD-Assets/prod2.jpg"
+                            class="img-fluid lazy-img"
+                          />
+                        </figure>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product">
+                      <a href="#!" class="product-item">
+                        <figure class="product-img loading-img">
+                          <img
+                            data-src="images/DD-Assets/prod3.jpg"
+                            class="img-fluid lazy-img"
+                          />
+                        </figure>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-btn-prev swiper-btn">
+                <i class="las la-angle-right"></i>
+              </div>
+              <div class="swiper-btn-next swiper-btn">
+                <i class="las la-angle-left"></i>
+              </div>
+            </div>
+          </div>
+          <div class="products-post-info">
+            <div class="products-post-content">
+              <button class="fav-btn"><i class="lar la-heart"></i></button>
+              <span class="products-post-span">المناسبة</span>
+              <h4 class="products-post-head">معرض كذا كذا</h4>
+              <table class="custom-table">
+                <tbody>
+                  <tr>
+                    <td class="table-name">حالة المنتج</td>
+                    <td class="table-value">
+                      <span class="item-status"
+                        ><i class="las la-check-circle"></i> متاح</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">التاريخ</td>
+                    <td class="table-value">16 أغسطس 2023</td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">مكان المناسبة</td>
+                    <td class="table-value">الرياض / الكويت</td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">الموقع</td>
+                    <td class="table-value">
+                      <a href="#" class="event-location"> الموقع على الخريطة</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">اسم القائم بالحجز</td>
+                    <td class="table-value">مصطفى خلف</td>
+                  </tr>
+                  <tr>
+                    <td class="table-name">رقم الهاتف</td>
+                    <td class="table-value">
+                      <a href="tel:+55500505" class="tel-number">+55500505</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="products-description">الوصف</span>
+              <p class="products-post-pargh">
+                هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع
+                الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
+                إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن
+                استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو
+                (أي الأحرف) وكأنها نص مقروء. العديد من برامح النشر المكتبي
+                وبرامح تحرير صفحات الويب تستخدم لوريم إيبسوم بشكل إفتراضي كنموذج
+                عن النص، وإذا قمت بإدخال "lorem ipsum" في أي محرك بحث ستظهر
+                العديد من المواقع الحديثة العهد في نتائج البحث. على مدى السنين
+                ظهرت نسخ جديدة ومختلفة من نص لوريم إيبسوم، أحياناً عن طريق
+                الصدفة، وأحياناً عن عمد كإدخال بعض العبارات الفكاهية إليها.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="sticky-item-post">
+          <div class="product-details-price">
+            <span class="new-price">1,604.25 ر.س</span>
+            <span class="old-price">1,782.50 ر.س</span>
+            <span class="hint">خصم 10%</span>
+          </div>
+          <div class="products-btn-cont">
+            <div class="item-qty">
+              <a role="button" class="qty-control qty-plus">
+                <i class="las la-plus"></i>
+              </a>
+              <a role="button" class="qty-control qty-minus">
+                <i class="las la-minus"></i>
+              </a>
+              <input
+                type="number"
+                class="qty-input"
+                value="1"
+                data-max="10"
+                data-min="1"
+              />
+            </div>
+            <a href="#" class="product-btn add-cart"> اضف إلى السلة</a>
+            <a href="checkout.html" class="product-btn custom-order">
+              صفحة الدفع</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- category-section -->
+    <!-- footer section -->
+    <footer>
+      <div class="container">
+        <div class="footer-cont">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <div class="footer-info">
+                <figure class="img-logo">
+                  <a href="index.html"
+                    ><img
+                      src="images/DD-Assets/logo-white.svg"
+                      class="img-fluid"
+                      alt="img-logo"
+                  /></a>
+                </figure>
+                <p class="footer-right">الموقع للحجوزات 2023 ©</p>
+                <div class="social">
+                  <a href="#" class="social-link">
+                    <i class="lab la-instagram"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="lab la-twitter"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="lab la-facebook-f"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="nav-foot-cont">
+                <h2 class="nav-foot-header foot-header">روابط سريعة</h2>
+                <ul class="nav-foot list-unstyled">
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">المناسبات</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">المفضلة</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">الشروط والأحكام</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">تواصل معنا</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="nav-foot-cont">
+                <h2 class="nav-foot-header foot-header">معلومات التواصل</h2>
+                <div class="nav-foot">
+                  <ul class="list-unstyled">
+                    <li class="nav-foot-li">
+                      <div class="contact-box">
+                        <i class="las la-home"></i>
+                        <span> الكويت /شارع كذا</span>
+                      </div>
+                    </li>
+                    <li class="nav-foot-li">
+                      <a href="tel:+0540000000" class="contact-box">
+                        <i class="las la-phone"></i>
+                        <span style="direction: ltr"> +0540000000 </span>
+                      </a>
+                    </li>
+                    <li class="nav-foot-li">
+                      <a href="#" class="contact-box">
+                        <i class="lab la-whatsapp"></i>
+                        <span style="direction: ltr"> +0540000000 </span>
+                      </a>
+                    </li>
+                    <li class="nav-foot-li">
+                      <a href="mailto:blabla.com" class="contact-box">
+                        <i class="las la-envelope"></i>
+                        <span> blabla.com </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="social">
+                    <a href="#" class="social-link">
+                      <i class="lab la-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                      <i class="lab la-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                      <i class="lab la-facebook-f"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section -->
+    <!-- arrow to top -->
+    <button class="arrow-top">
+      <i class="las la-arrow-up"></i>
+    </button>
+    <!-- arrow to top -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

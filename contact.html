@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>booking</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/line-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="internal-page">
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <!-- preloader -->
+    <!-- header section -->
+    <header>
+      <div class="top-header">
+        <div class="nav-header">
+          <figure class="img-logo">
+            <a href="index.html"
+              ><img
+                src="images/DD-Assets/logo.svg"
+                class="img-fluid"
+                alt="logo"
+              />
+            </a>
+          </figure>
+          <div class="navgition">
+            <div class="nav-head">
+              <a href="index.html" class="lang-ancor"> English</a>
+              <button class="close-menu">
+                <i class="las la-times"></i>
+              </button>
+            </div>
+            <ul class="big-menu list-unstyled">
+              <li>
+                <a href="index.html"> الرئيسية</a>
+              </li>
+              <li>
+                <a href="category.html"> المناسبات</a>
+              </li>
+              <li>
+                <a href="cart.html"> حجوزاتى</a>
+              </li>
+              <li>
+                <a href="fav.html"> المفضلة</a>
+              </li>
+
+              <li>
+                <a href="contact.html"> تواصل معنا</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-cont">
+            <div class="show-icons">
+              <div class="header-icons">
+                <a href="cart.html" class="add-to">
+                  <i class="las la-shopping-cart"></i>
+                  <span class="counter">0</span>
+                </a>
+                <button class="menu-bars" id="menu-id">
+                  <i class="las la-bars"></i>
+                </button>
+                <a href="index-en.html" class="lang-ancor"> English</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section     -->
+    <!-- breadcrumb section -->
+    <section class="breadcrumb-sec">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="item-home">
+            <a class="bread-link bread-home aFixx" href="index.html"
+              >الرئيسية
+            </a>
+          </li>
+          <li class="active item-23">
+            <span class="bread-current"> تواصل معنا</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- breadcrumb section -->
+    <!-- category-section -->
+    <section class="single-page">
+      <div class="container">
+        <div class="section-head-cont">
+          <h3 class="section-head">تواصل معنا</h3>
+        </div>
+        <div class="contact-section">
+          <h4 class="order-info-head">معلومات التواصل</h4>
+          <div class="contact-cont">
+            <div class="contact-item">
+              <a href="mailto:blabla.com" class="contact-ancor">
+                <i class="las la-envelope"></i>
+                <span> blabla.com </span>
+              </a>
+            </div>
+            <div class="contact-item">
+              <a href="tel:+9665400000000" class="contact-ancor">
+                <i class="las la-phone"></i>
+                <span style="direction: ltr"> +9665400000000 </span>
+              </a>
+            </div>
+            <div class="contact-item">
+              <a href="#" class="contact-ancor">
+                <i class="lab la-whatsapp"></i>
+                <span style="direction: ltr"> +9665400000000 </span>
+              </a>
+            </div>
+          </div>
+          <div class="map-frame">
+            <figure>
+              <img src="images/map-img.jpg" alt="" class="img-fluid" />
+            </figure>=
+          </div>
+          <div class="contact-form">
+            <form action="">
+              <div class="group-input-four">
+                <div class="form-group">
+                  <label class="form-label"> الاسم بالكامل</label>
+                  <input type="text" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label"> رقم الجوال</label>
+                  <div class="form-input-relative">
+                    <input
+                      type="tel"
+                      class="tel-input form-input"
+                      placeholder="5xxxxxxxx"
+                    />
+                    <span class="tel-lang">
+                      996+
+                      <img src="images/lang.png" alt="" />
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label"> البريد الإلكتروني</label>
+                  <input type="email" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label"> عنوان الرسالة</label>
+                  <input type="text" class="form-input" />
+                </div>
+                <div class="form-group full-grid">
+                  <label class="form-label"> نص الرسالة</label>
+                  <textarea type="text" class="form-input"></textarea>
+                </div>
+              </div>
+              <button class="apply-btn sub-btn">اضافة</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- category-section -->
+    <!-- footer section -->
+    <footer>
+      <div class="container">
+        <div class="footer-cont">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <div class="footer-info">
+                <figure class="img-logo">
+                  <a href="index.html"
+                    ><img
+                      src="images/DD-Assets/logo-white.svg"
+                      class="img-fluid"
+                      alt="img-logo"
+                  /></a>
+                </figure>
+                <p class="footer-right">الموقع للحجوزات 2023 ©</p>
+                <div class="social">
+                  <a href="#" class="social-link">
+                    <i class="lab la-instagram"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="lab la-twitter"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="lab la-facebook-f"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="nav-foot-cont">
+                <h2 class="nav-foot-header foot-header">روابط سريعة</h2>
+                <ul class="nav-foot list-unstyled">
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">المناسبات</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">المفضلة</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">الشروط والأحكام</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">تواصل معنا</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="nav-foot-cont">
+                <h2 class="nav-foot-header foot-header">معلومات التواصل</h2>
+                <div class="nav-foot">
+                  <ul class="list-unstyled">
+                    <li class="nav-foot-li">
+                      <div class="contact-box">
+                        <i class="las la-home"></i>
+                        <span> الكويت /شارع كذا</span>
+                      </div>
+                    </li>
+                    <li class="nav-foot-li">
+                      <a href="tel:+0540000000" class="contact-box">
+                        <i class="las la-phone"></i>
+                        <span style="direction: ltr"> +0540000000 </span>
+                      </a>
+                    </li>
+                    <li class="nav-foot-li">
+                      <a href="#" class="contact-box">
+                        <i class="lab la-whatsapp"></i>
+                        <span style="direction: ltr"> +0540000000 </span>
+                      </a>
+                    </li>
+                    <li class="nav-foot-li">
+                      <a href="mailto:blabla.com" class="contact-box">
+                        <i class="las la-envelope"></i>
+                        <span> blabla.com </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="social">
+                    <a href="#" class="social-link">
+                      <i class="lab la-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                      <i class="lab la-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                      <i class="lab la-facebook-f"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section -->
+    <!-- arrow to top -->
+    <button class="arrow-top">
+      <i class="las la-arrow-up"></i>
+    </button>
+    <!-- arrow to top -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
