@@ -2106,6 +2106,7 @@ html[dir=ltr] .about-img-cont .about-bg {
   }
   .price-box {
     min-height: 43px;
+    margin-bottom: 8px;
   }
   .product .product-name {
     text-align: center;
@@ -4171,5 +4172,8 @@ textarea.form-input {
   }
   .map-icon {
     width: 30px;
+  }
+  .product-date {
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */

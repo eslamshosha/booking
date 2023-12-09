@@ -500,6 +500,7 @@
   }
   .price-box {
     min-height: 43px;
+    margin-bottom: 8px;
   }
   .product .product-name {
     text-align: center;
@@ -520,7 +521,7 @@
 }
 /*                             product section                          */
 /*gallery-section*/
-.gallery-section{
+.gallery-section {
   margin-bottom: 60px;
 }
 .gallery-cont {
@@ -550,17 +551,17 @@
   transform: scale(1.05);
 }
 .tel-number,
-.event-location{
+.event-location {
   color: $main;
   font-weight: 400;
   font-size: 16px;
   transition: all 0.3s ease-in-out;
 }
 .tel-number:hover,
-.event-location:hover{
+.event-location:hover {
   color: $hover;
 }
-.tel-number{
+.tel-number {
   text-decoration: none !important;
 }
 .term-cont {
