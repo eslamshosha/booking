@@ -5,11 +5,11 @@ body {
   font-weight: 400;
 }
 body.internal-page {
-  padding-top: 102px;
+  padding-top: 110px;
 }
 @include max-991 {
   body.internal-page {
-    padding-top: 91.61px;
+    padding-top: 83.38px;
   }
 }
 .overflow {
@@ -251,7 +251,7 @@ ol.breadcrumb li {
   @include tr;
   text-transform: capitalize;
   font-size: 14px;
-  color: #a0c5bf;
+  color: #fff;
   font-weight: 400;
   text-decoration: none !important;
 }
