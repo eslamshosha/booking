@@ -1,6 +1,6 @@
 :root {
   --main-color: #2e2e2e;
-  --main-hover: #e26b26;
+  --main-hover: #000;
   --sec-color: #4B5256;
   --text-color: #9B9B9B;
   --back-color: #F1F1F1;
@@ -1736,7 +1736,7 @@ html[dir=rtl] .cats-dispaly li {
 }
 
 .about-img-cont {
-  background-color: var(--main-color);
+  background-color: var(--main-hover);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3097,16 +3097,30 @@ html[dir=rtl] .footer-accordion.active:after {
 
 .cart-flex {
   display: flex;
+  justify-content: center;
   gap: 15px;
 }
 
 .cart-figure {
   flex-shrink: 0;
-  max-width: 63px;
+  max-width: 120px;
+}
+
+.checkout-img {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 270/170;
+}
+.checkout-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cart-content {
   padding-top: 24px;
+  text-align: center;
 }
 
 .cart-ancor {
@@ -3125,7 +3139,7 @@ html[dir=rtl] .footer-accordion.active:after {
 .cart-content .cart-name {
   color: var(--sec-color);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 16px;
   display: inline-block;
 }
@@ -3144,6 +3158,14 @@ html[dir=rtl] .footer-accordion.active:after {
 }
 .table-group .item-qty .qty-input {
   font-size: 14px;
+}
+
+.cart-content .cart-total {
+  margin-bottom: 30px;
+}
+
+.cart-content .item-qty {
+  margin: 0 auto;
 }
 
 .table-group .qty-control {
@@ -3189,35 +3211,16 @@ html[dir=rtl] .footer-accordion.active:after {
   .cart-cont {
     display: block;
   }
-  .cart-table table {
-    display: flex;
-    position: relative;
+  .cart-cont .cart-table .table-group {
+    width: 100%;
+    min-width: 600px;
   }
   .cart-table .table-group {
     width: 100%;
+    min-width: 450px;
   }
   .cart-table .table-group tbody td:first-of-type {
     width: 100%;
-  }
-  .cart-table thead {
-    display: none;
-  }
-  .cart-table tr {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .cart-table .table-sm-btn {
-    position: absolute;
-    top: 15px;
-    inset-inline-end: 0;
-  }
-  .cart-table tbody td:nth-of-type(3) {
-    padding-inline-start: 78px;
-  }
-  .cart-table tbody td:nth-of-type(2) {
-    display: none;
   }
 }
 input::-webkit-inner-spin-button,
@@ -3235,6 +3238,11 @@ input {
   flex-direction: column;
   background-color: #f8f8f8;
   padding: 35px 30px 25px;
+}
+
+.checkout-container {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .table-total {

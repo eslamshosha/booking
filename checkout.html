@@ -49,7 +49,7 @@
           <figure class="img-logo">
             <a href="index.html"
               ><img
-                src="images/DD-Assets/logo.png"
+                src="images/DD-Assets/black-logo.png"
                 class="img-fluid"
                 alt="logo"
               />
@@ -118,17 +118,13 @@
     <!-- cart-section -->
     <section class="single-page">
       <div class="container">
-        <div class="checkout-grid">
+        <div class="checkout-container">
           <div class="checkout-flex">
             <form action="">
               <div class="checkout-cont">
                 <div class="group-input">
                   <div class="form-group">
                     <label class="form-label"> الاسم الأول</label>
-                    <input type="text" class="form-input custom-input" />
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label"> الاسم الأخير</label>
                     <input type="text" class="form-input custom-input" />
                   </div>
                   <div class="form-group">
@@ -145,78 +141,66 @@
                       </span>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label class="form-label">المدينة</label>
-                    <div class="form-input-relative custom-input">
-                      <i class="las la-angle-down angle-select"></i>
-                      <select class="select_input select2-city" name="city">
-                        <option value="two">الرياض</option>
-                        <option value="three">المدينة</option>
-                      </select>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="checkout-cont">
-                <div class="checkout-header">
-                  <span class="checkout-name">طرق الدفع</span>
-                </div>
-                <div class="payment-cont">
-                  <div class="form-group">
-                    <div class="check-group">
-                      <div class="check-width">
-                        <label class="check-label">
-                          <span class="payment-radio">
-                            <input type="radio" name="pay" />
-                            <span class="checkmark"></span>
-                            <span class="check-text">فيزا/ ماستركارد</span>
-                          </span>
-                          <div class="pay-img">
-                            <img
-                              src="images/DD-Assets/mastercard.png"
-                              alt="pay"
-                              class="img-fluid"
-                            />
-                            <img
-                              src="images/DD-Assets/visa.png"
-                              alt="pay"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </label>
+              <div class="checkout-cart">
+                <div class="checkout-cont">
+                  <h3 class="cart-head">ملخص سلة الشراء</h3>
+                  <div class="collapse-group">
+                    <div class="cart-flex">
+                      <figure class="cart-figure checkout-img loading-img">
+                        <img
+                          data-src="images/DD-Assets/prod1.jpg"
+                          class="img-fluid lazy-img"
+                        />
+                      </figure>
+                    </div>
+                    <div class="cart-content">
+                      <span class="cart-name">مناسبة معرض الصور</span>
+                    </div>
+                    <div class="checkout">
+                      <div class="cart-table">
+                        <table class="table-group">
+                          <thead>
+                            <tr>
+                              <th colspan="3">السعر</th>
+                              <th colspan="3">الكمية</th>
+                              <th colspan="3">الإجمالي</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="3">1,604.25 ر.س</td>
+                              <td colspan="3">
+                                <div class="item-qty">
+                                  <a role="button" class="qty-control qty-plus">
+                                    <i class="las la-plus"></i>
+                                  </a>
+                                  <a
+                                    role="button"
+                                    class="qty-control qty-minus"
+                                  >
+                                    <i class="las la-minus"></i>
+                                  </a>
+                                  <input
+                                    type="number"
+                                    class="qty-input"
+                                    value="1"
+                                    data-max="10"
+                                    data-min="1"
+                                  />
+                                </div>
+                              </td>
+                              <td colspan="3">1,604.25 ر.س</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
-                      <div class="check-width">
-                        <label class="check-label">
-                          <span class="payment-radio">
-                            <input type="radio" name="pay" />
-                            <span class="checkmark"></span>
-                            <span class="check-text">مدى</span>
-                          </span>
-                          <div class="pay-img">
-                            <img
-                              src="images/DD-Assets/mada.png"
-                              alt="pay"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </label>
+                      <div class="total-cont">
+                        <span class="table-name">إجمالي الطلب</span>
+                        <span class="total-price">1844.85 ر.س</span>
                       </div>
-                      <div class="check-width">
-                        <label class="check-label">
-                          <span class="payment-radio">
-                            <input type="radio" name="pay" />
-                            <span class="checkmark"></span>
-                            <span class="check-text">ابل باي</span>
-                          </span>
-                          <div class="pay-img">
-                            <img
-                              src="images/DD-Assets/applepay.png"
-                              alt="pay"
-                              class="img-fluid"
-                            />
-                          </div>
-                        </label>
-                      </div>
+                      <button class="cart-btn">اتمام الطلب</button>
                     </div>
                   </div>
                 </div>
@@ -228,63 +212,6 @@
                 <button data-bs-toggle="modal" data-bs-target="#terms-modal">
                   الشروط والاحكام
                 </button>
-              </div>
-            </div>
-          </div>
-          <div class="checkout-cart">
-            <div class="checkout-cont">
-              <h3 class="cart-head">ملخص سلة الشراء</h3>
-              <div class="collapse-group">
-                <button class="btn_collapse_ color_toggle poen_co">
-                  <span class="cart-item">
-                    <span>1</span>
-                    منتج في السلة
-                  </span>
-                  <div class="icon-wrapper">
-                    <div
-                      class="bar backg_toggle bar--vertical poen_backg"
-                    ></div>
-                    <div
-                      class="bar backg_toggle bar--horizontal is-active poen_backg"
-                    ></div>
-                  </div>
-                </button>
-                <div class="toggle_collapse open-collapse">
-                  <div class="cart-flex">
-                    <figure class="cart-figure loading-img">
-                      <img
-                        data-src="images/DD-Assets/prod1.jpg"
-                        class="img-fluid lazy-img"
-                      />
-                    </figure>
-                    <div class="cart-content">
-                      <span class="cart-name">مناسبة معرض الصور</span>
-                      <span class="cart-total">
-                        <span class="cart-count"> x1 </span>
-                        <span> 1,604.25 ر.س </span>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="checkout">
-                  <table class="checkout-table">
-                    <tbody>
-                      <tr>
-                        <td class="table-name">إجمالي المنتجات</td>
-                        <td class="table-price">1,604.25 ر.س</td>
-                      </tr>
-                      <tr>
-                        <td class="table-name">الضريبة</td>
-                        <td class="table-price">370.5 ر.س</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="total-cont">
-                    <span class="table-name">إجمالي الطلب</span>
-                    <span class="total-price">1844.85 ر.س</span>
-                  </div>
-                  <button class="cart-btn">اتمام الطلب</button>
-                </div>
               </div>
             </div>
           </div>
