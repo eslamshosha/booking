@@ -1137,7 +1137,7 @@ header {
 
 .nav-header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
   transition: all 0.3s ease-in-out;
@@ -1194,7 +1194,7 @@ header {
   width: 100%;
   display: none;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0 20px;
 }
 
