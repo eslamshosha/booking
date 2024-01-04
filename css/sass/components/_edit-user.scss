@@ -295,13 +295,13 @@ textarea.form-input {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: $hover;
+    background-color: $main;
     font-size: 20px;
     color: $white;
     @include tr;
   }
   &:hover {
-    color: $hover;
+    color: $white;
     i {
       background-color: $main;
     }

@@ -1340,7 +1340,7 @@ html[dir=rtl] .fixed-search {
     max-width: 100px;
   }
   .big-menu > li a {
-    font-size: 12px;
+    font-size: 14px;
   }
   .big-menu {
     gap: 15px;
@@ -4072,13 +4072,13 @@ textarea.form-input {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--main-hover);
+  background-color: var(--main-color);
   font-size: 20px;
   color: var(--white-color);
   transition: all 0.3s ease-in-out;
 }
 .contact-ancor:hover {
-  color: var(--main-hover);
+  color: var(--white-color);
 }
 .contact-ancor:hover i {
   background-color: var(--main-color);
