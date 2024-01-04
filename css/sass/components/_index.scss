@@ -142,7 +142,7 @@
   }
 }
 .about-img-cont {
-  background-color: $hover;
+  background-color: $main;
   @include flexCenter;
   width: 100%;
   overflow: hidden;
@@ -179,7 +179,7 @@
   }
 }
 .about-head {
-  color: $main;
+  color: $white;
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 25px;
@@ -188,7 +188,7 @@
 .about-pargh {
   font-weight: 400;
   font-size: 20px;
-  color: $sec;
+  color: $white;
   line-height: 36px;
   margin-bottom: 30px;
   @include max-991 {
@@ -220,7 +220,7 @@
 .product-section {
   text-align: center;
   padding: 75px 0;
-  background-color: #f4f7f6;
+  background-color: $main;
   margin-bottom: 70px;
   @include max-991 {
     & {
@@ -245,7 +245,7 @@
   text-transform: capitalize;
   font-weight: 700;
   font-size: 24px;
-  color: $main;
+  color: $white;
   margin: 0;
 }
 .product-link {
@@ -258,12 +258,13 @@
   border-radius: 24px;
   cursor: pointer;
   text-decoration: none !important;
-  background-color: $main;
+  background-color: $hover;
   color: $white;
   @include tr;
   &:hover {
     background-color: $hover;
     color: $white;
+    opacity: .7;
   }
 }
 .product-slider {
@@ -323,7 +324,7 @@
 }
 .product .product-name {
   display: block;
-  color: $sec;
+  color: $white;
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
@@ -342,7 +343,7 @@
 }
 .price-box {
   text-align: start;
-  color: $hover;
+  color: $white;
   font-size: 16px;
   width: 100%;
   margin: auto;
@@ -367,7 +368,7 @@
   color: #949494;
 }
 .product-date {
-  color: $sec;
+  color: $white;
   font-size: 16px;
   font-weight: 400;
 }
@@ -567,7 +568,7 @@
 .term-cont {
   font-weight: 500;
   font-size: 14px;
-  color: #999999;
+  color: $white;
   text-align: center;
   margin: 0 auto;
   margin-top: 20px;
@@ -578,12 +579,13 @@
   margin: 0;
   border: none !important;
   outline: none !important;
-  color: var(--main-color);
+  color: $white;
+  font-weight: 500;
   text-decoration: underline;
   transition: all 0.3s ease-in-out;
 }
 .term-cont button:hover {
-  color: var(--main-hover);
+  color: $hover;
 }
 .close-modal {
   font-size: 24px;

@@ -16,6 +16,7 @@ body {
   box-sizing: border-box;
   font-style: normal;
   font-weight: 400;
+  background-color: var(--main-hover);
 }
 
 body.internal-page {
@@ -188,7 +189,7 @@ html[dir=ltr] .progress-bar {
   transition: all 0.3s ease-in-out;
 }
 .arrow-top:hover, .arrow-top:focus {
-  background-color: var(--main-hover);
+  background-color: var(--main-color);
   color: var(--white-color);
 }
 
@@ -225,12 +226,12 @@ html[dir=ltr] .progress-bar {
 
 .custom-pagention a.active {
   color: var(--white-color);
-  background-color: var(--main-hover);
+  background-color: var(--main-color);
 }
 
 .custom-pagention a:hover {
   color: var(--white-color);
-  background-color: var(--main-hover);
+  background-color: var(--main-color);
 }
 
 .custom-pagention a i {
@@ -780,7 +781,7 @@ html[dir=rtl] .custom-tel[type=tel] {
 .form-group .form-label {
   font-size: 14px;
   font-weight: 500;
-  color: var(--sec-color);
+  color: var(--white-color);
   margin-inline-start: 22px;
   margin-bottom: 10px;
   display: block;
@@ -1030,6 +1031,17 @@ html[dir=rtl] .custom-tel[type=tel] {
   background-color: var(--main-hover);
 }
 
+.tickets-cont {
+  max-width: 360px;
+  margin: 0 auto;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
 @media only screen and (max-width: 1199px) {
   .copy-right {
     position: static;
@@ -1112,7 +1124,7 @@ header {
   width: 100%;
   z-index: 200;
   transition: all 0.3s ease-in-out;
-  background-color: var(--white-color);
+  background-color: var(--main-hover);
 }
 
 .top-header a {
@@ -1125,14 +1137,14 @@ header {
 
 .nav-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 15px 30px;
   transition: all 0.3s ease-in-out;
 }
 
 .big-menu > li a {
-  color: var(--sec-color);
+  color: var(--white-color);
   font-size: 16px;
   font-weight: 400;
   padding: 5px 0;
@@ -1140,7 +1152,7 @@ header {
   transition: all 0.3s ease-in-out;
 }
 .big-menu > li a:hover {
-  color: var(--main-hover);
+  color: var(--white-color);
 }
 
 .big-menu {
@@ -1170,11 +1182,11 @@ header {
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
-  color: var(--sec-color);
+  color: var(--white-color);
   transition: all 0.3s ease-in-out;
 }
 .lang-ancor:hover {
-  color: var(--main-hover);
+  color: var(--white-color);
 }
 
 .nav-head {
@@ -1736,7 +1748,7 @@ html[dir=rtl] .cats-dispaly li {
 }
 
 .about-img-cont {
-  background-color: var(--main-hover);
+  background-color: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1777,7 +1789,7 @@ html[dir=ltr] .about-img-cont .about-bg {
 }
 
 .about-head {
-  color: var(--main-color);
+  color: var(--white-color);
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 25px;
@@ -1787,7 +1799,7 @@ html[dir=ltr] .about-img-cont .about-bg {
 .about-pargh {
   font-weight: 400;
   font-size: 20px;
-  color: var(--sec-color);
+  color: var(--white-color);
   line-height: 36px;
   margin-bottom: 30px;
 }
@@ -1822,7 +1834,7 @@ html[dir=ltr] .about-img-cont .about-bg {
 .product-section {
   text-align: center;
   padding: 75px 0;
-  background-color: #f4f7f6;
+  background-color: var(--main-color);
   margin-bottom: 70px;
 }
 @media only screen and (max-width: 991px) {
@@ -1849,7 +1861,7 @@ html[dir=ltr] .about-img-cont .about-bg {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 24px;
-  color: var(--main-color);
+  color: var(--white-color);
   margin: 0;
 }
 
@@ -1865,13 +1877,14 @@ html[dir=ltr] .about-img-cont .about-bg {
   border-radius: 24px;
   cursor: pointer;
   text-decoration: none !important;
-  background-color: var(--main-color);
+  background-color: var(--main-hover);
   color: var(--white-color);
   transition: all 0.3s ease-in-out;
 }
 .product-link:hover {
   background-color: var(--main-hover);
   color: var(--white-color);
+  opacity: 0.7;
 }
 
 .product-slider {
@@ -1931,7 +1944,7 @@ html[dir=ltr] .about-img-cont .about-bg {
 
 .product .product-name {
   display: block;
-  color: var(--sec-color);
+  color: var(--white-color);
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
@@ -1950,7 +1963,7 @@ html[dir=ltr] .about-img-cont .about-bg {
 
 .price-box {
   text-align: start;
-  color: var(--main-hover);
+  color: var(--white-color);
   font-size: 16px;
   width: 100%;
   margin: auto;
@@ -1978,7 +1991,7 @@ html[dir=ltr] .about-img-cont .about-bg {
 }
 
 .product-date {
-  color: var(--sec-color);
+  color: var(--white-color);
   font-size: 16px;
   font-weight: 400;
 }
@@ -2183,7 +2196,7 @@ html[dir=ltr] .about-img-cont .about-bg {
 .term-cont {
   font-weight: 500;
   font-size: 14px;
-  color: #999999;
+  color: var(--white-color);
   text-align: center;
   margin: 0 auto;
   margin-top: 20px;
@@ -2195,7 +2208,8 @@ html[dir=ltr] .about-img-cont .about-bg {
   margin: 0;
   border: none !important;
   outline: none !important;
-  color: var(--main-color);
+  color: var(--white-color);
+  font-weight: 500;
   text-decoration: underline;
   transition: all 0.3s ease-in-out;
 }
@@ -3070,21 +3084,21 @@ html[dir=rtl] .footer-accordion.active:after {
 }
 
 .table-group thead {
-  background-color: #f8f8f8;
+  background-color: var(--main-color);
   margin-bottom: 5px;
 }
 
 .table-group th {
   font-weight: 500;
   font-size: 14px;
-  color: var(--sec-color);
+  color: var(--white-color);
   text-align: start;
   padding: 25px 15px;
   white-space: nowrap;
 }
 
 .table-group tbody td {
-  color: var(--sec-color);
+  color: var(--white-color);
   font-weight: 700;
   font-size: 14px;
   text-align: start;
@@ -3137,7 +3151,7 @@ html[dir=rtl] .footer-accordion.active:after {
 }
 
 .cart-content .cart-name {
-  color: var(--sec-color);
+  color: var(--white-color);
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 16px;
@@ -3148,7 +3162,7 @@ html[dir=rtl] .footer-accordion.active:after {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #a5a5a5;
+  color: var(--white-color);
   margin-bottom: 4px;
 }
 
@@ -3256,13 +3270,13 @@ input {
 .checkout-table .table-name {
   font-weight: 400;
   font-size: 14px;
-  color: var(--sec-color);
+  color: var(--white-color);
   text-align: start;
 }
 .checkout-table .table-price {
   font-weight: 700;
   font-size: 14px;
-  color: var(--sec-color);
+  color: var(--white-color);
   text-align: end;
   padding: 5px;
 }
@@ -3275,7 +3289,7 @@ input {
   text-align: start;
   font-weight: 400;
   font-size: 14px;
-  color: var(--sec-color);
+  color: var(--white-color);
   margin-bottom: 5px;
 }
 .total-cont .total-price {
@@ -3312,7 +3326,7 @@ input {
 }
 
 .checkout-flex {
-  background-color: #f8f8f8;
+  background-color: var(--main-color);
   padding: 30px;
 }
 
@@ -3431,7 +3445,7 @@ input {
 .cart-head {
   font-weight: 700;
   font-size: 24px;
-  color: var(--main-color);
+  color: var(--white-color);
   text-align: start;
   margin-bottom: 18px;
 }
@@ -3744,7 +3758,6 @@ input[type=file] {
 .product-date {
   font-size: 14px;
   font-weight: 400;
-  color: var(--sec-color);
   margin-bottom: 20px;
   text-align: start;
 }

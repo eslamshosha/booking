@@ -3,6 +3,7 @@ body {
   box-sizing: border-box;
   font-style: normal;
   font-weight: 400;
+  background-color: $hover;
 }
 body.internal-page {
   padding-top: 110px;
@@ -171,7 +172,7 @@ html[dir="ltr"] .progress-bar {
   @include tr;
   &:hover,
   &:focus {
-    background-color: $hover;
+    background-color: $main;
     color: $white;
   }
 }
@@ -206,11 +207,11 @@ html[dir="ltr"] .progress-bar {
 }
 .custom-pagention a.active {
   color: $white;
-  background-color: $hover;
+  background-color: $main;
 }
 .custom-pagention a:hover {
   color: $white;
-  background-color: $hover;
+  background-color: $main;
 }
 .custom-pagention a i {
   font-size: 16px;
