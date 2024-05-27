@@ -1,12 +1,12 @@
 /*                                   footer                            */
 footer {
   padding: 50px 0 65px;
-  background-color: $main;
+  background-color: $hover;
   position: relative;
   overflow: hidden;
   text-align: start;
 }
-.footer-cont{
+.footer-cont {
   position: relative;
   z-index: 1;
 }
@@ -80,7 +80,7 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 .nav-foot-li .nav-foot-link:hover {
-  color: $hover;
+  color: $white;
 }
 .contact-box {
   display: flex;
@@ -95,10 +95,10 @@ footer {
 }
 .contact-box i {
   font-size: 24px;
-  color: $hover;
+  // color: $main;
 }
 a.contact-box:hover {
-  color: $hover;
+  color: $white;
   text-decoration: none;
 }
 .social {
@@ -119,9 +119,25 @@ a.social-link {
   text-decoration: none !important;
   transition: all 0.3s ease-in-out;
   &:hover {
-    background-color: $hover;
+    background-color: rgba(107, 106, 106, 0.3);
+
     color: $white;
   }
+}
+.copy-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  text-align: center;
+}
+.copy-name a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-inline-end: 5px;
+   color: white;
 }
 
 /*                             footer accordion                 */

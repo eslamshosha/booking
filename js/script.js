@@ -100,7 +100,61 @@ $(document).ready(function () {
       ? $(".arrow-top").fadeIn(300)
       : $(".arrow-top").fadeOut(300);
   });
-
+ //otp code animation
+ $(".otp-form *:input[type!=hidden]:first").focus();
+ let otp_fields = $(".otp-form .otp-field"),
+   otp_value_field = $(".otp-form .otp-value");
+ otp_fields
+   .on("input", function (e) {
+     $(this).val(
+       $(this)
+         .val()
+         .replace(/[^0-9]/g, "")
+     );
+     let opt_value = "";
+     otp_fields.each(function () {
+       let field_value = $(this).val();
+       if (field_value != "") opt_value += field_value;
+     });
+     otp_value_field.val(opt_value);
+   })
+   .on("keyup", function (e) {
+     let key = e.keyCode || e.charCode;
+     if (key == 8 || key == 46 || key == 37 || key == 40) {
+       // Backspace or Delete or Left Arrow or Down Arrow
+       $(this).prev().focus();
+     } else if (key == 38 || key == 39 || $(this).val() != "") {
+       // Right Arrow or Top Arrow or Value not empty
+       $(this).next().focus();
+     }
+   })
+   .on("paste", function (e) {
+     let paste_data = e.originalEvent.clipboardData.getData("text");
+     let paste_data_splitted = paste_data.split("");
+     $.each(paste_data_splitted, function (index, value) {
+       otp_fields.eq(index).val(value);
+     });
+   });
+ //otp timer
+ const timerExists =
+   document.getElementsByClassName("countDown-cont").length > 0;
+ if (timerExists) {
+   function countdown() {
+     var seconds = 59;
+     function tick() {
+       var counter = document.getElementById("counter");
+       seconds--;
+       counter.innerHTML = "00:" + (seconds < 10 ? "0" : "") + String(seconds);
+       if (seconds > 0) {
+         setTimeout(tick, 1000);
+       } else {
+         // document.getElementById("counter").innerHTML = "";
+       }
+     }
+     tick();
+   }
+   countdown();
+ }
   const selectExists =
     document.getElementsByClassName("select_input").length > 0;
   if (selectExists) {
@@ -180,6 +234,7 @@ $(document).ready(function () {
       },
     },
   });
+  
   // collapse~~~~~~~~
   $(".btn_collapse_").click(function () {
     const toggle = $(this).next(".toggle_collapse");
@@ -199,6 +254,15 @@ $(document).ready(function () {
 
   lazyLoad();
 });
+function showPass(showPass) {
+  sibling = showPass.parentElement.nextElementSibling;
+  // sibling.focus();
+  if (showPass.checked) {
+    sibling.setAttribute("type", "text");
+  } else {
+    sibling.setAttribute("type", "password");
+  }
+}
 //lazy load
 
 function lazyLoad() {

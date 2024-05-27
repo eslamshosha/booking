@@ -1,4 +1,57 @@
+/*                          dropdown                            */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: #fff;
+  color: $sec;
+  text-align: center;
+  min-width: 120px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 12px;
+  z-index: 300;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7px 0;
+  transition: all 0.3s ease-in-out;
+}
 
+.dropdown-content::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.dropdown-content a {
+  color: $main;
+  padding: 5px 15px;
+  text-decoration: none;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $hover;
+  }
+}
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+}
 .top-header .header-icons {
   display: flex;
   align-items: center;
@@ -27,7 +80,7 @@
   transition: all 0.3s ease-in-out;
   &:hover {
     color: $white;
-    background-color: $hover;
+    background-color: $main;
   }
 }
 .user-cont {
@@ -277,7 +330,7 @@ html[dir="rtl"] .fixed-search {
     display: none;
   }
   .nav-head .lang-ancor {
-    color: $main;
+    color: $white;
   }
   .menu-bars {
     display: flex;
@@ -306,7 +359,7 @@ html[dir="rtl"] .fixed-search {
     background-color: transparent;
   }
   .close-menu {
-    color: $main;
+    color: $white;
   }
   .navgition {
     display: block;
@@ -321,7 +374,7 @@ html[dir="rtl"] .fixed-search {
     opacity: 0;
     visibility: hidden;
     clip-path: circle(10.9% at 16% 16%);
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
     transition: 0.4s;
     z-index: 200;
     overflow-y: auto;
@@ -368,7 +421,7 @@ html[dir="rtl"] .fixed-search {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: $main;
+    color: $white;
     font-weight: 700;
     font-size: 16px;
   }

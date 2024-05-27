@@ -7,7 +7,7 @@
 .account-sidebar {
   width: 100%;
   padding: 10px 20px 15px;
-  background-color: $main;
+  background-color: #f9f9f9;
   flex-shrink: 0;
 }
 .account-list {
@@ -26,7 +26,7 @@
   position: relative;
   font-weight: 400;
   font-size: 16px;
-  color: $white;
+  color: $sec;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -41,9 +41,9 @@
   }
   &.active,
   &:hover {
-    color: $black;
+    color: $main;
     i {
-      color: $black;
+      color: $hover;
     }
   }
 }
@@ -241,7 +241,7 @@
 .product-date {
   font-size: 14px;
   font-weight: 400;
-  // color: $sec;
+  color: $sec;
   margin-bottom: 20px;
   text-align: start;
 }
@@ -518,13 +518,13 @@ textarea.form-input {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: $main;
+    background-color: $hover;
     font-size: 20px;
     color: $white;
     @include tr;
   }
   &:hover {
-    color: $white;
+    color: $hover;
     i {
       background-color: $main;
     }
@@ -561,7 +561,7 @@ textarea.form-input {
   }
 }
 .pargh {
-  color: $white;
+  color: $sec;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -637,5 +637,4 @@ textarea.form-input {
   .map-icon {
     width: 30px;
   }
-  .product-date{text-align: center;}
 }
