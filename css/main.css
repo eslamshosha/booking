@@ -2143,7 +2143,7 @@ html[dir=ltr] .about-img-cont .about-bg {
 .product-link {
   width: 170px;
   height: 48px;
-  margin: 0 auto;
+  margin: 30px auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
