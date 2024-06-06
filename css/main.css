@@ -375,7 +375,6 @@ ol.breadcrumb li:not(.active):after {
 
 .form-input-relative {
   position: relative;
-  display: flex;
 }
 
 .form-input {
