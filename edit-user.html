@@ -90,7 +90,7 @@
                 <div class="dropdown cat-anchor">
                   <div class="add-to">
                     <div class="user-cont">
-                      <i class="las la-user"></i>
+                      <img src="images/profile.jpeg" alt="profile" />
                     </div>
                     <div class="dropdown-content">
                       <a class="cat-drop" href="sign-in.html">تسجيل الدخول</a>
@@ -160,10 +160,35 @@
               <h3 class="section-head">تعديل بيانات الحساب</h3>
             </div>
             <form action="">
+              <figure class="profile-img">
+                <img src="images/profile.jpeg" alt="profile" />
+              </figure>
               <div class="group-input-grid">
+                <div class="form-group full-grid">
+                  <label class="form-label">حمل صورة شخصيه</label>
+                  <div class="position-relative">
+                    <label class="custom-file-upload custom-file">
+                      <input type="file" class="upload-change" />
+                      <span class="upload-btn file-txt" data-title=""></span>
+                    </label>
+                    <button class="file-btn">رفع ملف</button>
+                  </div>
+                </div>
                 <div class="form-group">
                   <label class="form-label"> اسم المستخدم</label>
-                  <input type="text" class="form-input" value="عبدالله صالح" />
+                  <input type="text" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label"> اسم الاب</label>
+                  <input type="text" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label"> اسم العائلة</label>
+                  <input type="text" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label"> المدرسة / الكلية</label>
+                  <input type="text" class="form-input" />
                 </div>
                 <div class="form-group">
                   <label class="form-label"> رقم الجوال</label>
@@ -172,7 +197,6 @@
                       type="tel"
                       class="tel-input form-input"
                       placeholder="5xxxxxxxx"
-                      value="540000000"
                     />
                     <span class="tel-lang">
                       996+
@@ -182,40 +206,26 @@
                 </div>
                 <div class="form-group">
                   <label class="form-label"> البريد الإلكتروني</label>
-                  <input
-                    type="email"
-                    class="form-input"
-                    value="Abdallah.saleh@gmail.com"
-                  />
+                  <input type="email" class="form-input" />
                 </div>
                 <div class="form-group">
-                  <label class="form-label">المنطقة</label>
+                  <label class="form-label"> كلمة المرور </label>
                   <div class="form-input-relative">
-                    <i class="las la-angle-down angle-select"></i>
-                    <select class="select_input select2-city" name="city">
-                      <option value="two">الرياض</option>
-                      <option value="three">المدينة</option>
-                    </select>
+                    <label class="password-show">
+                      <input type="checkbox" onchange="showPass(this)" />
+                      <i class="las la-eye"></i>
+                    </label>
+                    <input type="password" class="form-input" />
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="form-label">المدينة</label>
+                  <label class="form-label">تأكيد كلمة المرور</label>
                   <div class="form-input-relative">
-                    <i class="las la-angle-down angle-select"></i>
-                    <select class="select_input select2-city" name="city">
-                      <option value="two">الرياض</option>
-                      <option value="three">المدينة</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="form-label">الجنس</label>
-                  <div class="form-input-relative">
-                    <i class="las la-angle-down angle-select"></i>
-                    <select class="select_input select2-city" name="city">
-                      <option value="two">ذكر</option>
-                      <option value="three">انثى</option>
-                    </select>
+                    <label class="password-show">
+                      <input type="checkbox" onchange="showPass(this)" />
+                      <i class="las la-eye"></i>
+                    </label>
+                    <input type="password" class="form-input" />
                   </div>
                 </div>
               </div>

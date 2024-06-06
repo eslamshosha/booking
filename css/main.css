@@ -465,6 +465,7 @@ html[dir=rtl] .custom-tel[type=tel] {
 
 .form-group .tel-lang img {
   margin-inline-start: 5px;
+  width: 20px;
 }
 
 .form-input-relative .password-show {
@@ -4297,8 +4298,8 @@ input[type=file] {
 }
 
 .custom-file-upload {
-  background-color: var(--white-color);
-  border: 2px solid #ECECEC;
+  background-color: var(--back-color);
+  border: 2px solid #ececec;
   height: 48px;
   width: 100%;
   padding: 0 30px;
@@ -4348,7 +4349,7 @@ input[type=file] {
   border-radius: 18px;
   width: 116px;
   height: 32px;
-  background-color: #E5E5E5;
+  background-color: #fff;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -4364,6 +4365,34 @@ input[type=file] {
 .apply-btn.submit-btn {
   width: 330px;
   margin-top: 0;
+}
+
+.profile-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+  aspect-ratio: 1;
+}
+.profile-img img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.user-cont img {
+  max-width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (max-width: 991px) {
