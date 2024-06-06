@@ -440,8 +440,7 @@ html[dir=rtl] .custom-tel[type=tel] {
 
 .form-group .icon-placeholder {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 11px;
   right: 18px;
   color: #9093a3;
   font-size: 24px;
@@ -452,8 +451,7 @@ html[dir=rtl] .custom-tel[type=tel] {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 14px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.6;
@@ -469,8 +467,7 @@ html[dir=rtl] .custom-tel[type=tel] {
 
 .form-input-relative .password-show {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 14px;
   inset-inline-end: 18px;
   font-size: 20px;
   cursor: pointer;
@@ -1028,8 +1025,8 @@ html[dir=ltr] .return-link i {
 }
 
 /* .select2-container--default .select2-results__option--disabled{
-  display: none;
-} */
+    display: none;
+  } */
 .angle-select {
   position: absolute;
   z-index: 20;
