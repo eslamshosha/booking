@@ -170,6 +170,14 @@ $(document).ready(function () {
     const $select2 = $(".select_input");
     $select2.select2();
   }
+  const phoneExists = document.getElementsByClassName("phone").length > 0;
+  if (phoneExists) {
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      utilsScript:
+        "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+  }
   ///////// ** main** /////////
   var specials = new Swiper(".main-slider .swiper-container", {
     loop: true,
@@ -263,6 +271,29 @@ $(document).ready(function () {
 
   lazyLoad();
 });
+
+//form wizard
+function activeStep(ele, stepId) {
+  var nextStep = "#step_" + stepId;
+  $(".step").not(nextStep).hide();
+  $(nextStep).show();
+  if ($(ele).hasClass("btn-irv-default")) {
+    var activeHead = stepId + 1;
+    var activeStep = "#activeStep-" + activeHead;
+    $(activeStep).removeClass("active");
+  } else if (stepId == 6) {
+    var activeHead = stepId - 1;
+    var lastHead = stepId;
+    var activeStep = "#activeStep-" + activeHead;
+    var activelast = "#activeStep-" + lastHead;
+    $(activeStep).addClass("active");
+    $(activelast).addClass("active");
+  } else {
+    var activeHead = stepId;
+    var activeStep = "#activeStep-" + activeHead;
+    $(activeStep).addClass("active");
+  }
+}
 function showPass(showPass) {
   sibling = showPass.parentElement.nextElementSibling;
   // sibling.focus();
